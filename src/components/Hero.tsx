@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
-import ParticleBackground from "./ParticleBackground";
 import TicTacToe from "./TicTacToe";
 
 const NAV_LINKS = [
-  { label: "Home",     id: "hero" },
-  { label: "Projects", id: "projects" },
-  { label: "Contact",  id: "contact" },
+  { label: "Home",       id: "hero" },
+  { label: "Experience", id: "experience" },
+  { label: "Projects",   id: "projects" },
+  { label: "Contact",    id: "contact" },
 ];
 
 const SKILLS = [
@@ -55,8 +55,6 @@ const ABOUT_POINTS = [
 ];
 
 export default function Hero() {
-  const [hovered, setHovered] = useState(false);
-  const [clickPos, setClickPos] = useState<{ x: number; y: number } | null>(null);
   const [visiblePoints, setVisiblePoints] = useState<number[]>([]);
 
   useEffect(() => {
@@ -65,11 +63,6 @@ export default function Hero() {
     });
   }, []);
 
-  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setClickPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-  };
-
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -77,13 +70,8 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden flex flex-col items-center px-6 pt-4 pb-8 bg-gradient-to-br from-rose-300 via-violet-200 via-40% to-teal-200 dark:from-rose-950 dark:via-violet-950 dark:via-40% dark:to-teal-950"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onClick={handleClick}
+      className="relative overflow-hidden flex flex-col items-center px-6 pt-4 pb-8"
     >
-      <ParticleBackground hovered={hovered} clickPos={clickPos} />
-
       {/* ── Vertical nav — left side ── */}
       <nav className="absolute left-4 top-14 z-20 flex flex-col gap-2">
         {NAV_LINKS.map(({ label, id }) => (

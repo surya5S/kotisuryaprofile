@@ -87,8 +87,8 @@ export default function ParticleBackground({
     const ctx = canvas.getContext("2d")!;
 
     const resize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     };
     resize();
     window.addEventListener("resize", resize);
@@ -232,8 +232,8 @@ export default function ParticleBackground({
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-none"
-      style={{ pointerEvents: "none" }}
+      className="fixed inset-0 w-full h-full pointer-events-none"
+      style={{ pointerEvents: "none", zIndex: 0 }}
     />
   );
 }
