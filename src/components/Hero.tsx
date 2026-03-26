@@ -3,10 +3,11 @@ import ThemeToggle from "./ThemeToggle";
 import TicTacToe from "./TicTacToe";
 
 const NAV_LINKS = [
-  { label: "Home",       id: "hero" },
-  { label: "Experience", id: "experience" },
-  { label: "Projects",   id: "projects" },
-  { label: "Contact",    id: "contact" },
+  { label: "Home",           id: "hero" },
+  { label: "Experience",     id: "experience" },
+  { label: "Projects",       id: "projects" },
+  { label: "Certifications", id: "certifications" },
+  { label: "Contact",        id: "contact" },
 ];
 
 const SKILLS = [

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
 import Contact from "./components/contact";
 import ScrollIndicator from "./components/ScrollIndicator";
 import ParticleBackground from "./components/ParticleBackground";
@@ -30,6 +31,7 @@ function App() {
         <Hero />
         <Experience />
         <Projects />
+        <Certifications />
         <Contact />
       </div>
     </div>

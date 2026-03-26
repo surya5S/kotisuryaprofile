@@ -1,7 +1,7 @@
 const links = [
-  { label: "GitHub", href: "#", icon: "⌥" },
-  { label: "LinkedIn", href: "#", icon: "in" },
-  { label: "Instagram", href: "#", icon: "ig" },
+  { label: "GitHub", href: "https://github.com/surya5S?tab=repositories" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/suryaprakash123/" },
+  { label: "Instagram", href: "https://www.instagram.com/surya.k.prakash/" },
 ];
 
 export default function Contact() {
@@ -20,10 +20,10 @@ export default function Contact() {
 
         <div className="bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border border-white dark:border-pink-900 rounded-3xl shadow-2xl ring-1 ring-pink-200 dark:ring-pink-800 p-8 text-center">
           <a
-            href="mailto:your@email.com"
+            href="mailto:suryaprakash1658@gmail.com"
             className="inline-block w-full py-3 mb-5 bg-gradient-to-r from-rose-500 to-fuchsia-500 hover:from-rose-600 hover:to-fuchsia-600 text-white font-semibold rounded-xl shadow-md transition-all hover:scale-105 active:scale-95"
           >
-            your@email.com
+            suryaprakash1658@gmail.com
           </a>
 
           <div className="flex justify-center gap-3">
@@ -31,6 +31,8 @@ export default function Contact() {
               <a
                 key={l.label}
                 href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-5 py-2 bg-white dark:bg-gray-800 border border-pink-200 dark:border-pink-800 rounded-full text-sm text-gray-700 dark:text-gray-300 hover:border-fuchsia-400 hover:text-fuchsia-600 dark:hover:text-fuchsia-400 transition-all font-medium shadow-sm"
               >
                 {l.label}
