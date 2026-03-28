@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koti Surya Prakash Kanneti — Resume</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 11px;
+        color: #1a1a1a;
+        background: #fff;
+        padding: 32px 40px;
+        max-width: 860px;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+
+      /* ── Header ── */
+      .header {
+        text-align: center;
+        margin-bottom: 14px;
+      }
+      .header h1 {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: #111;
+      }
+      .header .role {
+        font-size: 12px;
+        font-weight: 600;
+        color: #5b21b6;
+        margin: 3px 0 6px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .header .contact {
+        font-size: 10.5px;
+        color: #444;
+      }
+      .header .contact a {
+        color: #5b21b6;
+        text-decoration: none;
+      }
+
+      /* ── Divider ── */
+      hr {
+        border: none;
+        border-top: 1.5px solid #e5e7eb;
+        margin: 10px 0;
+      }
+      .section-title {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: #5b21b6;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #ede9fe;
+        padding-bottom: 3px;
+      }
+
+      /* ── Section spacing ── */
+      .section {
+        margin-bottom: 14px;
+      }
+
+      /* ── Summary ── */
+      .summary p {
+        color: #374151;
+        font-size: 11px;
+        line-height: 1.6;
+      }
+
+      /* ── Skills ── */
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        gap: 4px 10px;
+      }
+      .skills-grid .skill-label {
+        font-weight: 700;
+        color: #374151;
+      }
+      .skills-grid .skill-val {
+        color: #4b5563;
+      }
+
+      /* ── Experience ── */
+      .exp-item {
+        margin-bottom: 12px;
+      }
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .exp-company {
+        font-weight: 700;
+        font-size: 12px;
+        color: #111;
+      }
+      .exp-date {
+        font-size: 10px;
+        color: #6b7280;
+        font-style: italic;
+      }
+      .exp-role {
+        font-size: 11px;
+        color: #5b21b6;
+        font-weight: 600;
+        margin: 1px 0;
+      }
+      .exp-meta {
+        font-size: 10px;
+        color: #9ca3af;
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+      .exp-points {
+        padding-left: 14px;
+      }
+      .exp-points li {
+        color: #374151;
+        margin-bottom: 3px;
+        font-size: 10.5px;
+        line-height: 1.55;
+      }
+      .exp-stack {
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+      .exp-stack span {
+        font-size: 9.5px;
+        padding: 1px 7px;
+        border-radius: 20px;
+        background: #ede9fe;
+        color: #5b21b6;
+        font-weight: 600;
+      }
+
+      /* ── Education ── */
+      .edu-item {
+        margin-bottom: 8px;
+      }
+      .edu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .edu-school {
+        font-weight: 700;
+        font-size: 11.5px;
+        color: #111;
+      }
+      .edu-date {
+        font-size: 10px;
+        color: #6b7280;
+        font-style: italic;
+      }
+      .edu-degree {
+        font-size: 10.5px;
+        color: #374151;
+      }
+      .edu-meta {
+        font-size: 10px;
+        color: #9ca3af;
+      }
+
+      /* ── Certifications ── */
+      .certs-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 20px;
+      }
+      .cert-item {
+        font-size: 10.5px;
+        color: #374151;
+      }
+      .cert-item span {
+        font-weight: 700;
+        color: #5b21b6;
+      }
+
+      /* ── Print ── */
+      @media print {
+        body {
+          padding: 18px 28px;
+        }
+        .no-print {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Print button (hidden on print) -->
+    <div class="no-print" style="text-align: right; margin-bottom: 16px">
+      <button
+        onclick="window.print()"
+        style="
+          padding: 8px 20px;
+          background: #5b21b6;
+          color: #fff;
+          border: none;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: 600;
+          cursor: pointer;
+        "
+      >
+        ⬇ Save / Print as PDF
+      </button>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Koti Surya Prakash Kanneti</h1>
+      <div class="role">Full Stack Developer</div>
+      <div class="contact">
+        +1 (928) 266-8759 &nbsp;|&nbsp;
+        <a href="mailto:suryaprakash1658@gmail.com"
+          >suryaprakash1658@gmail.com</a
+        >
+        &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/suryaprakash123/">LinkedIn</a>
+        &nbsp;|&nbsp;
+        <a href="https://github.com/surya5S">GitHub</a> &nbsp;|&nbsp; Arizona,
+        USA
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Profile Summary -->
+    <div class="section summary">
+      <div class="section-title">Profile Summary</div>
+      <p>
+        Accomplished Full Stack Developer with 5+ years of experience designing
+        and delivering enterprise-grade solutions across healthcare, banking,
+        and retail domains using .NET Core, C#, React, TypeScript, GraphQL, and
+        Ruby on Rails. Proven expertise in cloud-native microservices on Azure
+        and AWS, event-driven architecture with Kafka and Azure Service Bus, and
+        end-to-end CI/CD automation. Recognized for AI/LLM integration, data
+        engineering pipelines, and security-first engineering — consistently
+        reducing latency by 40%+ and driving zero-downtime releases across
+        regulated environments.
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Technical Skills -->
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <span class="skill-label">Backend:</span>
+        <span class="skill-val"
+          >C#, ASP.NET Core, .NET 6/7/8, Web API, Entity Framework Core, Ruby on
+          Rails, Node.js</span
+        >
+
+        <span class="skill-label">Frontend:</span>
+        <span class="skill-val"
+          >React, Angular, TypeScript, JavaScript (ES6+), GraphQL, HTML5, CSS3,
+          Bootstrap / SCSS</span
+        >
+
+        <span class="skill-label">APIs & Architecture:</span>
+        <span class="skill-val"
+          >RESTful APIs, GraphQL, Microservices, OAuth2 / JWT, SOLID Principles,
+          Event-Driven Design</span
+        >
+
+        <span class="skill-label">Databases:</span>
+        <span class="skill-val"
+          >SQL Server, PostgreSQL, CosmosDB, MongoDB, DynamoDB, Redis
+          Cache</span
+        >
+
+        <span class="skill-label">Cloud & DevOps:</span>
+        <span class="skill-val"
+          >Azure (AKS, ADF, Service Bus, Functions, Key Vault), AWS (Lambda,
+          ECS, S3), Docker, Kubernetes, Terraform</span
+        >
+
+        <span class="skill-label">CI/CD & Tools:</span>
+        <span class="skill-val"
+          >Azure DevOps, GitHub Actions, Jenkins, Postman, Swagger, Git</span
+        >
+
+        <span class="skill-label">Testing:</span>
+        <span class="skill-val"
+          >XUnit, NUnit, Moq, MSTest, TDD, Code Reviews</span
+        >
+
+        <span class="skill-label">AI Tools:</span>
+        <span class="skill-val"
+          >GitHub Copilot, ChatGPT, Claude (Anthropic), Cursor, LangChain,
+          OpenAI API</span
+        >
+
+        <span class="skill-label">Methodologies:</span>
+        <span class="skill-val"
+          >Agile, Scrum, SDLC, Clean Architecture, TDD</span
+        >
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Work Experience -->
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Innova Solutions</span>
+          <span class="exp-date">June 2025 – Present</span>
+        </div>
+        <div class="exp-role">Full Stack Developer</div>
+        <div class="exp-meta">
+          Client: McKesson &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp; Arizona, USA
+        </div>
+        <ul class="exp-points">
+          <li>
+            Built end-to-end patient and provider enrollment workflows in React
+            + TypeScript, reducing onboarding drop-off by 35% and improving form
+            completion rates by 28%.
+          </li>
+          <li>
+            Designed GraphQL APIs to unify fragmented healthcare data sources,
+            eliminating over-fetching and cutting average API response time by
+            42%.
+          </li>
+          <li>
+            Developed Ruby on Rails backend services for real-time eligibility
+            verification, reducing provider wait time during enrollment by 60%.
+          </li>
+          <li>
+            Optimized PostgreSQL schemas and query plans for large-scale patient
+            datasets, improving data retrieval performance by 50% under peak
+            load.
+          </li>
+          <li>
+            Deployed enrollment services on Kubernetes (AKS/Azure), achieving
+            99.9% uptime and enabling zero-downtime releases for a critical
+            healthcare platform.
+          </li>
+          <li>
+            Leveraged GitHub Copilot and Claude AI to accelerate test coverage
+            generation and code review cycles, reducing development time by 25%
+            on high-complexity features.
+          </li>
+        </ul>
+        <div class="exp-stack">
+          <span>React</span><span>TypeScript</span><span>GraphQL</span
+          ><span>Ruby on Rails</span><span>PostgreSQL</span
+          ><span>Kubernetes</span><span>Azure</span><span>GitHub Copilot</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Wells Fargo</span>
+          <span class="exp-date">Dec 2023 – May 2025</span>
+        </div>
+        <div class="exp-role">Software Engineer</div>
+        <div class="exp-meta">Banking &nbsp;·&nbsp; Arizona, USA</div>
+        <ul class="exp-points">
+          <li>
+            Delivered .NET microservices for core banking transaction flows,
+            improving throughput by 40% and reducing end-to-end processing
+            latency by 30%.
+          </li>
+          <li>
+            Integrated Azure Service Bus for async event-driven workflows,
+            increasing system resilience and reducing inter-service coupling by
+            55%.
+          </li>
+          <li>
+            Built secure REST APIs with OAuth2/JWT for financial data access,
+            cutting unauthorized access incidents by 100% across compliance
+            audits.
+          </li>
+          <li>
+            Automated CI/CD pipelines on Azure DevOps, reducing deployment time
+            by 65% and enabling 3× more frequent releases.
+          </li>
+          <li>
+            Optimized SQL Server queries and indexing strategies, reducing
+            financial report generation time by 45% for business stakeholders.
+          </li>
+          <li>
+            Used GitHub Copilot and ChatGPT to accelerate boilerplate generation
+            and API documentation, cutting sprint delivery time by 20%.
+          </li>
+        </ul>
+        <div class="exp-stack">
+          <span>.NET Core</span><span>Azure</span><span>Azure Service Bus</span
+          ><span>OAuth2 / JWT</span><span>SQL Server</span
+          ><span>Azure DevOps</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Northern Arizona University</span>
+          <span class="exp-date">Aug 2023 – May 2025</span>
+        </div>
+        <div class="exp-role">
+          Graduate Teaching Assistant & Application Developer
+        </div>
+        <div class="exp-meta">
+          Internal Development Portal &nbsp;·&nbsp; Education &nbsp;·&nbsp;
+          Arizona, USA
+        </div>
+        <ul class="exp-points">
+          <li>
+            Developed and maintained an internal development portal, reducing
+            administrative overhead by 40% and improving tool accessibility for
+            500+ faculty and students.
+          </li>
+          <li>
+            Implemented role-based access control and authentication, securing
+            sensitive academic data and reducing unauthorized access attempts by
+            90%.
+          </li>
+          <li>
+            Collaborated with faculty to deliver iterative feature releases,
+            increasing portal adoption across departments by 60% within two
+            semesters.
+          </li>
+          <li>
+            Assisted in teaching graduate-level software engineering,
+            contributing to a 25% improvement in student assignment submission
+            rates.
+          </li>
+          <li>
+            Resolved critical performance bottlenecks in the portal, reducing
+            average page load time by 50% and improving overall user
+            satisfaction.
+          </li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Innova Solutions</span>
+          <span class="exp-date">Mar 2021 – July 2023</span>
+        </div>
+        <div class="exp-role">Software Engineer</div>
+        <div class="exp-meta">
+          Client: Columbia Sportswear &nbsp;·&nbsp; Retail &nbsp;·&nbsp;
+          Hyderabad, India
+        </div>
+        <ul class="exp-points">
+          <li>
+            Built Azure Data Factory pipelines to ingest and transform retail
+            data from multiple sources, cutting data preparation time by 55% and
+            improving BI accuracy.
+          </li>
+          <li>
+            Automated order processing workflows with Azure Logic Apps, reducing
+            manual intervention by 70% and processing time by 45%.
+          </li>
+          <li>
+            Developed .NET APIs for Columbia's retail platform, improving
+            third-party integration reliability from 78% to 99.5% uptime.
+          </li>
+          <li>
+            Optimized SQL Server data models for inventory and sales reporting,
+            reducing query execution time by 60% on high-volume datasets.
+          </li>
+          <li>
+            Designed a scalable ETL architecture on Azure that reduced data
+            pipeline lag by 80%, enabling near-real-time analytics for retail
+            operations.
+          </li>
+        </ul>
+        <div class="exp-stack">
+          <span>.NET</span><span>Azure</span><span>ADF</span
+          ><span>SQL Server</span><span>Logic Apps</span>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+
+      <div class="edu-item">
+        <div class="edu-header">
+          <span class="edu-school">Northern Arizona University</span>
+          <span class="edu-date">Aug 2023 – May 2025</span>
+        </div>
+        <div class="edu-degree">Master of Science in Computer Science</div>
+        <div class="edu-meta">GPA: 3.83 &nbsp;·&nbsp; Flagstaff, AZ, USA</div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-header">
+          <span class="edu-school"
+            >Vignan's Lara Institute of Technology and Science</span
+          >
+          <span class="edu-date">Jul 2016 – Sep 2020</span>
+        </div>
+        <div class="edu-degree">
+          Bachelor of Science in Computer Science & Engineering
+        </div>
+        <div class="edu-meta">GPA: 7.8 &nbsp;·&nbsp; Kakinada, AP, India</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Certifications -->
+    <div class="section">
+      <div class="section-title">Certifications</div>
+      <div class="certs-grid">
+        <div class="cert-item">
+          Azure Developer Associate &nbsp;<span>AZ-204</span>
+        </div>
+        <div class="cert-item">
+          AWS Certified Developer – Associate &nbsp;<span>DVA-C02</span>
+        </div>
+        <div class="cert-item">
+          Microsoft Certified: Data Fundamentals &nbsp;<span>DP-900</span>
+        </div>
+        <div class="cert-item">
+          Microsoft Certified: Azure Fundamentals &nbsp;<span>AZ-900</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

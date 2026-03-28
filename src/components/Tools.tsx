@@ -67,6 +67,19 @@ const categories = [
     ],
   },
   {
+    label: "AI Tools",
+    accent: "from-fuchsia-400 to-purple-500",
+    tag: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200 dark:bg-fuchsia-900/30 dark:text-fuchsia-300 dark:border-fuchsia-700",
+    icon: "🤖",
+    tools: [
+      { name: "GitHub Copilot", logo: "https://logos.hunter.io/github.com" },
+      { name: "ChatGPT", logo: "https://logos.hunter.io/openai.com" },
+      { name: "Claude (Anthropic)", logo: "https://logos.hunter.io/anthropic.com" },
+      { name: "Cursor", logo: "https://logos.hunter.io/cursor.sh" },
+      { name: "LangChain", logo: "https://logos.hunter.io/langchain.com" },
+    ],
+  },
+  {
     label: "Collaboration & Project Management",
     accent: "from-amber-400 to-yellow-500",
     tag: "bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-700",

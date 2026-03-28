@@ -322,12 +322,15 @@ export default function Hero() {
           <p className="text-gray-400 dark:text-gray-500 text-xs mt-1">
             📍 Arizona, USA
           </p>
-          <button
-            onClick={(e) => { e.stopPropagation(); setShowResume(true); }}
+          <a
+            href="https://drive.google.com/file/d/1h6Cotp9PiAj4NUZSmCUBjkU_l9YoNPN2/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
             className="mt-3 px-4 py-1.5 bg-gradient-to-r from-rose-500 via-violet-600 to-teal-500 hover:brightness-110 text-white text-xs font-semibold rounded-full shadow transition-all hover:scale-105 active:scale-95"
           >
             View Resume
-          </button>
+          </a>
           <div className="mt-4 w-full">
             <TicTacToe />
           </div>
@@ -402,13 +405,15 @@ export default function Hero() {
                 Surya Prakash — Resume
               </span>
               <div className="flex items-center gap-2">
-                <a
-                  href="/resume.pdf"
-                  download="Surya_Prakash_Resume.pdf"
+                <button
+                  onClick={() => {
+                    const iframe = document.querySelector<HTMLIFrameElement>("#resume-iframe");
+                    iframe?.contentWindow?.print();
+                  }}
                   className="px-4 py-1.5 text-xs font-semibold rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 hover:brightness-110 text-white shadow transition-all hover:scale-105 active:scale-95"
                 >
-                  ⬇ Download
-                </a>
+                  ⬇ Download PDF
+                </button>
                 <button
                   onClick={() => setShowResume(false)}
                   className="px-4 py-1.5 text-xs font-semibold rounded-full bg-rose-100 text-rose-600 hover:bg-rose-200 dark:bg-rose-900/30 dark:text-rose-400 dark:hover:bg-rose-900/50 transition-colors"
@@ -418,9 +423,10 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* PDF iframe */}
+            {/* Resume iframe */}
             <iframe
-              src="/resume.pdf"
+              id="resume-iframe"
+              src="/resume-updated.html"
               className="flex-1 w-full"
               title="Resume"
             />
