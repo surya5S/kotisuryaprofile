@@ -76,7 +76,7 @@ export default function Certifications() {
               className="flex bg-white/70 dark:bg-gray-900/70 backdrop-blur-sm border border-white/60 dark:border-gray-700 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-shadow transition-transform duration-300 overflow-hidden"
             >
               {/* Left — logo panel */}
-              <div className="flex-shrink-0 w-20 flex items-center justify-center p-4">
+              <div className="flex-shrink-0 w-16 sm:w-20 flex items-center justify-center p-3 sm:p-4">
                 <div className="w-12 h-12 rounded-xl bg-white dark:bg-gray-800 shadow-md border border-gray-100 dark:border-gray-700 flex items-center justify-center overflow-hidden">
                   <img
                     src={cert.logo}

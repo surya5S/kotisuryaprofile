@@ -3,7 +3,11 @@ import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
+import Education from "./components/Education";
+import Interests from "./components/Interests";
+import Tools from "./components/Tools";
 import Contact from "./components/contact";
+import Footer from "./components/Footer";
 import ScrollIndicator from "./components/ScrollIndicator";
 import ParticleBackground from "./components/ParticleBackground";
 
@@ -31,8 +35,12 @@ function App() {
         <Hero />
         <Experience />
         <Projects />
+        <Tools />
         <Certifications />
+        <Education />
+        <Interests />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

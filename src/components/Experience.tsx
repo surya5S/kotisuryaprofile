@@ -117,10 +117,10 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.2, delay: i * 0.1, ease: "easeOut" }}
-              className="flex bg-white/70 dark:bg-gray-900/70 backdrop-blur-sm border border-white/60 dark:border-gray-700 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-shadow transition-transform duration-300 overflow-hidden"
+              className="flex flex-col sm:flex-row bg-white/70 dark:bg-gray-900/70 backdrop-blur-sm border border-white/60 dark:border-gray-700 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-shadow transition-transform duration-300 overflow-hidden"
             >
               {/* Left rectangle — logo panel */}
-              <div className="flex-shrink-0 w-24 flex flex-col items-center justify-center p-4">
+              <div className="flex-shrink-0 w-full sm:w-24 flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-0 p-4 sm:p-4 border-b sm:border-b-0 border-gray-100 dark:border-gray-700">
                 <div className="w-14 h-14 rounded-xl bg-white dark:bg-gray-800 shadow-md border border-gray-100 dark:border-gray-700 flex items-center justify-center overflow-hidden">
                   <img
                     src={exp.logo}
@@ -143,9 +143,9 @@ export default function Experience() {
                 </div>
               </div>
 
-              {/* Vertical divider */}
+              {/* Vertical divider — desktop only */}
               <div
-                className={`w-px self-stretch bg-gradient-to-b ${exp.accent} opacity-30`}
+                className={`hidden sm:block w-px self-stretch bg-gradient-to-b ${exp.accent} opacity-30`}
               />
 
               {/* Right — text content */}
