@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Event-Driven Payment Orchestration Engine",
     domain: "Cloud / Fintech",
-    company: "Wells Fargo",
+    company: "BNS International Inc",
     desc: "High-throughput microservices payment processor handling 1,000+ transactions/second with sub-100ms latency and 99.999% uptime, featuring automatic fraud scoring and cross-channel settlement reconciliation via Azure Service Bus.",
     stack: [".NET 8", "Kafka", "Azure Service Bus", "AKS", "CosmosDB", "Redis"],
     accent: "from-violet-400 to-indigo-500",
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Zero-Trust Identity & Access Governance",
     domain: "Security",
-    company: "Wells Fargo",
+    company: "BNS International Inc",
     desc: "Enterprise IAM platform enforcing adaptive, context-aware access policies with RBAC, conditional MFA, and real-time risk scoring — cutting unauthorized access incidents by 78% across compliance audits through continuous identity verification.",
     stack: ["ASP.NET Core", "React", "Azure Entra ID", "OAuth2/JWT", "SQL Server", "Docker"],
     accent: "from-rose-400 to-pink-500",
