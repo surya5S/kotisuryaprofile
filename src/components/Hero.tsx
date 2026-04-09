@@ -261,7 +261,9 @@ export default function Hero() {
           <span
             key={word}
             className={`text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-500 via-violet-500 to-teal-500 transition-all duration-500 ${
-              visibleWords.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              visibleWords.includes(i)
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-4"
             }`}
           >
             {word}
@@ -323,7 +325,7 @@ export default function Hero() {
             📍 Arizona, USA
           </p>
           <a
-            href="https://drive.google.com/file/d/1h6Cotp9PiAj4NUZSmCUBjkU_l9YoNPN2/view?usp=sharing"
+            href="https://drive.google.com/file/d/1M_Cr4Bxs8PTv31RhQarm2U1BR_LpoSYw/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
@@ -407,7 +409,10 @@ export default function Hero() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => {
-                    const iframe = document.querySelector<HTMLIFrameElement>("#resume-iframe");
+                    const iframe =
+                      document.querySelector<HTMLIFrameElement>(
+                        "#resume-iframe",
+                      );
                     iframe?.contentWindow?.print();
                   }}
                   className="px-4 py-1.5 text-xs font-semibold rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 hover:brightness-110 text-white shadow transition-all hover:scale-105 active:scale-95"
