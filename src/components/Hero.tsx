@@ -283,10 +283,10 @@ export default function Hero() {
           </span>
         </h1>
         <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-          5+ years shipping enterprise software across healthcare, banking, and
-          retail — from FHIR-compliant patient platforms to event-driven payment
-          engines. I bring both the depth to architect cloud-native solutions
-          and the speed to deliver them.
+          5+ years shipping enterprise software across healthcare, banking,
+          retail, and education — from patient enrollment platforms to
+          event-driven payment engines. I bring both the depth to architect
+          cloud-native solutions and the speed to deliver them.
         </p>
         <div className="flex flex-wrap justify-center gap-2">
           {[

@@ -1,39 +1,48 @@
 const experiences = [
   {
     company: "Innova Solutions",
-    role: "Full Stack Developer",
+    role: "FullStack Developer",
     client: "McKesson",
     sector: "Healthcare",
+    period: "Mar 2026 – Present",
     stack: [
       "React",
       "TypeScript",
       "GraphQL",
-      "Ruby on Rails",
+      ".NET 8",
       "PostgreSQL",
-      "Kubernetes",
+      "AKS",
       "Azure",
+      "OpenAI API",
     ],
     accent: "from-emerald-400 to-teal-500",
     logo: "https://logos.hunter.io/innovasolutions.com",
     logoBg: "bg-gradient-to-br from-emerald-500 to-teal-600",
     initials: "IS",
     tag: "bg-emerald-100 text-emerald-700 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-300 dark:border-emerald-700",
-    location: "Arizona, USA",
+    location: "Phoenix, AZ",
     current: true,
     points: [
-      "Built end-to-end patient and provider enrollment workflows in React + TypeScript, reducing onboarding drop-off by 35% and improving form completion rates by 28%.",
-      "Designed GraphQL APIs to unify fragmented healthcare data sources, eliminating over-fetching and cutting average API response time by 42%.",
-      "Developed Ruby on Rails backend services for real-time eligibility verification, reducing provider wait time during enrollment by 60%.",
-      "Optimized PostgreSQL schemas and query plans for large-scale patient datasets, improving data retrieval performance by 50% under peak load.",
-      "Deployed enrollment services on Kubernetes (AKS/Azure), achieving 99.9% uptime and enabling zero-downtime releases for a critical healthcare platform.",
+      "Architected end-to-end patient and provider enrollment workflows using React + TypeScript and .NET 8 APIs, reducing onboarding drop-off by 35% and improving form completion by 28% for 100K+ monthly users.",
+      "Designed GraphQL APIs consolidating McKesson's healthcare data across 10+ source systems, eliminating over-fetching and cutting average API response time by 42%, directly accelerating clinician workflows.",
+      "Optimized PostgreSQL schemas and query execution plans for large-scale patient datasets, improving retrieval by 50%; deployed on AKS with zero-downtime rolling updates maintaining 99.9% uptime SLA.",
+      "Enforced HIPAA-compliant access using Azure Key Vault, OAuth2/JWT, and row-level security; integrated OpenAI API to automate test generation, cutting dev cycle time by 25% with zero compliance incidents.",
     ],
   },
   {
     company: "BNS International Inc",
     role: ".NET Full Stack Developer",
-    client: null,
+    client: "Wells Fargo",
     sector: "Banking",
-    stack: [".NET", "Azure"],
+    period: "Jun 2025 – Feb 2026",
+    stack: [
+      ".NET 8",
+      "Azure Service Bus",
+      "Azure DevOps",
+      "OAuth2/JWT",
+      "REST APIs",
+      "Microservices",
+    ],
     accent: "from-red-500 to-yellow-500",
     logo: "https://media.licdn.com/dms/image/v2/C4E0BAQE5H975javClw/company-logo_200_200/company-logo_200_200/0/1630629186937?e=2147483647&v=beta&t=mo7Y5irqTi18SujbgFfLQn_OkrPvbgjnSAxVAubDdwY",
     logoBg: "bg-gradient-to-br from-red-600 to-yellow-500",
@@ -42,40 +51,45 @@ const experiences = [
     location: "Arizona, USA",
     current: false,
     points: [
-      "Delivered .NET microservices for core banking transaction flows, improving throughput by 40% and reducing end-to-end processing latency by 30%.",
-      "Integrated Azure Service Bus for async event-driven workflows, increasing system resilience and reducing inter-service coupling by 55%.",
-      "Built secure REST APIs with OAuth2/JWT for financial data access, cutting unauthorized access incidents by 100% across compliance audits.",
-      "Automated CI/CD pipelines on Azure DevOps, reducing deployment time by 65% and enabling 3x more frequent releases.",
-      "Optimized SQL Server queries and indexing strategies, reducing financial report generation time by 45% for business stakeholders.",
+      "Delivered 6 .NET 8 microservices powering core banking transaction flows, increasing throughput by 40% and reducing end-to-end processing latency by 30% across 2M+ daily transactions.",
+      "Integrated Azure Service Bus for async event-driven workflows across payment, notification, and audit services, increasing resilience and reducing inter-service coupling by 55%.",
+      "Automated blue-green CI/CD pipelines in Azure DevOps with OAuth2/JWT-secured REST APIs, reducing release time by 65%, enabling 3× more frequent deployments, and achieving 100% compliance audit pass rate.",
     ],
   },
   {
     company: "Northern Arizona University",
-    role: "Graduate Teaching Assistant & Application Developer",
-    client: "Internal Development Portal",
+    role: "Graduate Teaching Assistant / App Developer",
+    client: null,
     sector: "Education",
-    stack: [],
+    period: "Aug 2024 – May 2025",
+    stack: ["ASP.NET Core", "React", "OAuth2", "RBAC"],
     accent: "from-blue-500 to-yellow-400",
     logo: "https://logos.hunter.io/nau.edu",
     logoBg: "bg-gradient-to-br from-blue-700 to-blue-500",
     initials: "NAU",
     tag: "bg-blue-100 text-blue-700 border-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-700",
-    location: "Arizona, USA",
+    location: "Flagstaff, AZ",
     current: false,
     points: [
-      "Developed and maintained an internal development portal, reducing administrative overhead by 40% and improving tool accessibility for 500+ faculty and students.",
-      "Implemented role-based access control and authentication, securing sensitive academic data and reducing unauthorized access attempts by 90%.",
-      "Collaborated with faculty to deliver iterative feature releases, increasing portal adoption across departments by 60% within two semesters.",
-      "Assisted in teaching graduate-level software engineering, contributing to a 25% improvement in student assignment submission rates.",
-      "Resolved critical performance bottlenecks in the portal, reducing average page load time by 50% and improving overall user satisfaction.",
+      "Designed and built a full-stack portal (ASP.NET Core + React) for 500+ faculty and students, reducing admin overhead by 40% and eliminating all paper-based workflows.",
+      "Implemented RBAC and OAuth2 authentication, reducing unauthorized access attempts by 90%; resolved N+1 query bottlenecks cutting page load time by 50% and driving 60% higher portal adoption.",
+      "Co-taught graduate software engineering to 40+ students on clean architecture and TDD, contributing to a 25% improvement in assignment quality scores.",
     ],
   },
   {
     company: "Innova Solutions",
     role: "Associate Software Engineer",
-    client: "Columbia",
+    client: "Columbia Sportswear",
     sector: "Retail",
-    stack: [".NET", "Azure", "ADF", "SQL Server", "Logic Apps"],
+    period: "Mar 2021 – Jul 2023",
+    stack: [
+      ".NET Core",
+      "Azure",
+      "ADF",
+      "CosmosDB",
+      "Blob Storage",
+      "SQL Server",
+    ],
     accent: "from-violet-400 to-purple-500",
     logo: "https://logos.hunter.io/innovasolutions.com",
     logoBg: "bg-gradient-to-br from-violet-600 to-purple-700",
@@ -84,11 +98,36 @@ const experiences = [
     location: "Hyderabad, India",
     current: false,
     points: [
-      "Built Azure Data Factory pipelines to ingest and transform retail data from multiple sources, cutting data preparation time by 55% and improving BI accuracy.",
-      "Automated order processing workflows with Azure Logic Apps, reducing manual intervention by 70% and processing time by 45%.",
-      "Developed .NET APIs for Columbia's retail platform, improving third-party integration reliability from 78% to 99.5% uptime.",
-      "Optimized SQL Server data models for inventory and sales reporting, reducing query execution time by 60% on high-volume datasets.",
-      "Designed a scalable ETL architecture on Azure that reduced data pipeline lag by 80%, enabling near-real-time analytics for retail operations.",
+      "Designed 12 Azure Data Factory pipelines ingesting data from 8+ source systems into the analytics warehouse, cutting data preparation time by 55% and enabling near-real-time inventory analytics across 300+ retail locations.",
+      "Designed a reconciliation system using Azure Blob Storage, Cosmos DB, and .NET Core with retry logic, scaling batch processing from 100K to 500K records and improving message delivery success by 35%.",
+      "Developed .NET Core REST APIs improving third-party integration reliability from 78% to 99.5% uptime; automated CI/CD pipelines in Azure DevOps cutting deployment effort by 50%.",
+    ],
+  },
+  {
+    company: "Swiftsoft Infotech Services",
+    role: "Software Engineer Intern",
+    client: null,
+    sector: "Technology",
+    period: "Jun 2020 – Feb 2021",
+    stack: [
+      "ASP.NET Core",
+      "Azure Functions",
+      "CosmosDB",
+      "Blob Storage",
+      "Azure Service Bus",
+      "SQL Server",
+    ],
+    accent: "from-fuchsia-400 to-pink-500",
+    logo: "https://logos.hunter.io/swiftsoft.com",
+    logoBg: "bg-gradient-to-br from-fuchsia-600 to-pink-600",
+    initials: "SS",
+    tag: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200 dark:bg-fuchsia-900/30 dark:text-fuchsia-300 dark:border-fuchsia-700",
+    location: "Hyderabad, India",
+    current: false,
+    points: [
+      "Built data transformation pipelines using Microsoft Dynamics 365, SQL Server, and Liquid templates dispatched via Azure Service Bus, reducing processing errors by 40% and improving cross-system data accuracy.",
+      "Engineered ASP.NET Core and Azure Functions backend services integrated with CosmosDB and Blob Storage, enabling real-time data operations and improving query performance via indexing and partitioning strategies.",
+      "Delivered real-time KQL analytics dashboards for business stakeholders; enforced security via Azure Key Vault and maintained zero compliance violations through MS Test unit and integration testing.",
     ],
   },
 ];
@@ -161,9 +200,14 @@ export default function Experience() {
                       </span>
                     )}
                   </div>
-                  <span className="text-xs text-gray-400 dark:text-gray-500 flex items-center gap-1">
-                    📍 {exp.location}
-                  </span>
+                  <div className="flex flex-col items-end gap-0.5">
+                    <span className="text-xs text-gray-400 dark:text-gray-500">
+                      {exp.period}
+                    </span>
+                    <span className="text-xs text-gray-400 dark:text-gray-500 flex items-center gap-1">
+                      📍 {exp.location}
+                    </span>
+                  </div>
                 </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-0.5">
                   {exp.role}

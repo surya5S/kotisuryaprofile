@@ -115,7 +115,7 @@ export default function Contact() {
           {/* ── Right — Email + Social ── */}
           <div className="w-full md:w-64 shrink-0 flex flex-col gap-4">
             <a
-              href="mailto:suryaprakash1658@gmail.com"
+              href="mailto:surya.kotikanneti@gmail.com"
               className="block text-center py-2.5 bg-gradient-to-r from-rose-500 to-fuchsia-500 hover:from-rose-600 hover:to-fuchsia-600 text-white font-semibold text-sm rounded-xl shadow-md transition-all hover:scale-105 active:scale-95"
             >
               ✉ Email Me
