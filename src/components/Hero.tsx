@@ -325,7 +325,7 @@ export default function Hero() {
             📍 Arizona, USA
           </p>
           <a
-            href="https://drive.google.com/file/d/1M_Cr4Bxs8PTv31RhQarm2U1BR_LpoSYw/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KSv9edg5brc93F9g5NcmLW5DFKOqUoar/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
